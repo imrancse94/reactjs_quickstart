@@ -1,0 +1,21 @@
+.nav-user-info {
+    background-color: #5969ff;
+    line-height: 1.4;
+    padding: 12px;
+    color: #fff;
+    font-size: 13px;
+    border-radius: 2px 2px 0 0;
+}
+
+.navbar-right-top .nav-item .nav-link {
+    padding: 0;
+    font-size: 16px;
+    line-height: 2;
+    color: #82849f;
+    height: auto;
+}
+
+.nav-user-img-profile{
+    width: 25px;
+    height: 25px;
+}
