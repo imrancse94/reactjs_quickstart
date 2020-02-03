@@ -13,12 +13,13 @@ import cookie from "js-cookie";
 import './styles/custom.css'
 
 
-const jwt_secret = "q51JgMf3m4w8n2ZlDMcRYy8PwbHpDx0cJaZHUtfWpNnueKs53ykTDLXcjZFAyosW";
+const jwt_secret = "8ZHYMszCUh1WO9nl0fH3yEirRlHMir9MpIjAAYQvQXv9zpv4Enq6Oc6g7YpYZp2N";
 
 let token = cookie.get("token");
 
 if (token) {
     jwt.verify(token, jwt_secret, (err, decoded) => {
+        console.log(err,decoded.iss)
         if (err) {
             cookie.remove("token");
             token = null;
